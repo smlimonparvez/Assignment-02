@@ -1,0 +1,278 @@
+/********************************************* header css *******************************/
+.container{
+    width: 100%;
+}
+.contain{
+    width: 85%;
+    background: #000;
+    border-radius: 25px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+.contain-1{
+    width: 85%;
+    margin: auto;
+    margin-bottom: 80px;
+}
+.flex-item{
+    display: flex; 
+}
+.half-width{
+    width: 50%;
+    padding-left: 35px;
+    padding-top: 35px;
+    padding-right: 35px;
+}
+.half-width img{
+    width: 100%;
+}
+.half-width h1{
+    color: aliceblue;
+    font-size: 4em;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+    animation: lighting 7s ease-in-out infinite;
+    transition: .9s;
+}
+/*************************************** animated h1 ***********************************/
+@keyframes lighting{
+    0%{
+        color: aliceblue;
+    }
+    25%{
+        color: #818181;
+    }
+    50%{
+        color: tomato;
+    }
+    75%{
+        color: violet;
+    }
+    100%{
+        color: aqua;
+    }
+}
+.half-width p{
+    color: #818181;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+.button{
+    padding: 8px 30px;
+    background: red;
+    font-size: 1.3em;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    color: aliceblue;
+    transition: 0.3s ease-in;
+}
+.button:hover{
+    background: gray;
+}
+/**************************************** main css ********************************************/
+/********************************************* side bar & menu item **************************/
+.all-info{
+    display: grid;
+    grid-template-columns: 250px auto;
+    column-gap: 10px;
+}
+.side-bar{
+    width: 220px;
+    height: 135px;
+    background: #000;
+    border-radius: 10px;
+    padding: 12px;
+}
+.menu-item{
+    display: flex;
+    flex-direction: column;
+}
+.button-1{
+    padding: 10px 25px;
+    background: aliceblue;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    transition: 0.3s all ease;
+}
+.button-1:hover{
+    background: gray;
+}
+.button-1.active{
+    background: red;
+    margin-bottom: 10px;
+}
+.button-1.active:hover{
+    background: gray;
+}
+/******************************************* blogs ***************************************** */
+.grid-item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.blogs{
+    box-sizing: border-box;
+    border: 1px solid rgb(230, 222, 222);
+    border-radius: 12px;
+    width: 282px;
+}
+.blog-pic img{
+    width: 100%;
+} 
+.info{
+    margin-top: 10px;
+    margin-left: 14px;
+}
+.info h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: .9em;
+}
+.btn{
+    text-decoration: none;
+    background: aliceblue;
+    padding: 5px 14px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 3px;
+    font-size: .8em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-top: 5px;
+    transition: 0.3s all ease;
+}
+.btn:hover{
+    background: gray;
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.icon{
+    display: flex;
+    align-items: center;
+}
+.seeall{
+    margin-top: 60px;
+    margin-left: 520px;
+    visibility: hidden;
+}
+.hide-btn{
+    padding: 10px 30px;
+    background: red;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    transition: 0.3s all ease;
+}
+.hide-btn:hover{
+    background: gray;
+}
+/********************************* second html page *******************************************/
+.flex-img{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+.description h4{
+    font-size: 1.3em;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.description p{
+    font-size: .9em;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #818181;
+}
+
+/**************************************** footer css **********************************************/
+.footer{
+    width: 100%;
+    height: 300px;
+    background: #000;
+}
+.footer-info{
+    padding-top: 65px;
+}
+.footer-info h1{
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+hr{
+    width: 85%;
+}
+.flex-footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+ul li{
+    list-style-type: none;
+}
+ul li a{
+    text-align: center;
+    color: gray;
+    padding: 2px 5px;
+    text-decoration: none;
+    font-size: .9em;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+.social-icons{
+    text-align: center;
+}
+.fa-brands{
+    color: #1E4297;
+    padding: 10px 20px;
+}
+.fa-brands.fa-youtube{
+    color: red;
+}
+.fa-brands.fa-instagram{
+    color: #B6309b;
+}
+/********************************* responsive for tablet *****************************************/
+@media only screen and (max-wide: 768px) {
+    .all-info{
+        grid-template-columns: auto;
+    }
+    .grid-item{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .menu-item{
+        display: block;
+    }
+     .side-bar{
+        height: auto;
+        background: transparent;
+        box-shadow: 2px 2px 40px #ddd;
+    }
+    .flex-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .seeall.hide-btn{
+        visibility: visible;
+    }
+}
